@@ -1,0 +1,14 @@
+@import "./../../../styles.scss";
+
+.qr {
+  min-height: 100vh;
+  padding: 2em 1em;
+  background-color:cornflowerblue;
+
+  @include flex(column, nowrap, space-between, center);
+
+  &__header {}
+  &__footer {
+    width: 100%;
+  }
+}

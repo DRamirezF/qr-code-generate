@@ -1,0 +1,34 @@
+@import "./../../../../styles.scss";
+
+.header {
+    background-color: maroon;
+    min-width: 100px;
+    min-height: 100px;
+
+  &__list {
+    @include flex(row, wrap, flex-start, center);
+    gap: .8em;
+    font-size: $small;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: antiquewhite;
+  }
+  &__item {
+    width: 115px;
+    height: 32px;
+  }
+  &__link {
+    background-color: $white;
+    border-bottom: 2px solid $border;
+  }
+  &__boxButton {
+    @include flex(row, nowrap, flex-start, center);
+    gap: .3em;
+  }
+  &__icon {
+    width: 18px;
+    height: 18px;
+    background-color: crimson;
+  }
+  // &__text {}
+}
