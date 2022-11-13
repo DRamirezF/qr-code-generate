@@ -1,0 +1,74 @@
+<app-subtitle [subtitle]="'vCard QR Code'"></app-subtitle>
+
+<form class="vcard" action="">
+  <div class="vcard__block">
+    <label for="name" class="vcard__label">Your name:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="name" class="vcard__input" placeholder="First name">
+      <input type="text" class="vcard__input" placeholder="Last name">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="mobile" class="vcard__label">Contact:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="mobile" class="vcard__input vcard__input-complete" placeholder="Mobile">
+      <input type="text" class="vcard__input" placeholder="Phone">
+      <input type="text" class="vcard__input" placeholder="Fax">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="email" class="vcard__label">Email:</label>
+    <div class="vcard__inputBox">
+      <input type="email" id="email" class="vcard__input vcard__input-complete" placeholder="your@email.com">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="company" class="vcard__label">Company</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="company" class="vcard__input vcard__lineComplete" placeholder="Company">
+      <input type="text" class="vcard__input vcard__lineComplete" placeholder="Your job">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="street" class="vcard__label">Street:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="street" class="vcard__input vcard__input-complete">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="city" class="vcard__label">city:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="city" class="vcard__input">
+      <input type="number" class="vcard__input" placeholder="ZIP">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="state" class="vcard__label">state:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="state" class="vcard__input vcard__input-complete">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="country" class="vcard__label">country:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="country" class="vcard__input vcard__input-complete">
+    </div>
+  </div>
+
+  <div class="vcard__block">
+    <label for="website" class="vcard__label">website:</label>
+    <div class="vcard__inputBox">
+      <input type="text" id="website" class="vcard__input vcard__input-complete" placeholder="www.your-website.com">
+    </div>
+  </div>
+
+</form>
+
+<app-button-generate-qr></app-button-generate-qr>

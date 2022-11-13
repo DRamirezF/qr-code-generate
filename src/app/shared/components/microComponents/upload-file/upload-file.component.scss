@@ -1,0 +1,23 @@
+@import "./../../../../../styles.scss";
+
+.upload {
+  width: 100%;
+  background-color: teal;
+  @include flex(row, nowrap, center, center);
+  gap: .3em;
+  margin: 5.625em 0 0;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    background-color: crimson;
+  }
+  // &__textBlue {}
+  &__textGray {
+    display: none;
+
+    @include media($tabletS) {
+      display: block;
+    }
+  }
+}

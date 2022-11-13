@@ -2,8 +2,6 @@
 
 .header {
     background-color: maroon;
-    min-width: 100px;
-    min-height: 100px;
 
   &__list {
     @include flex(row, wrap, flex-start, center);

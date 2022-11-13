@@ -1,0 +1,26 @@
+<app-subtitle [subtitle]="'Email QR Code'"></app-subtitle>
+
+<form class="email" action="">
+  <div class="email__block">
+    <label for="email" class="email__label">Email:</label>
+    <div class="email__inputBox">
+      <input type="email" id="email" class="email__input" placeholder="Your email">
+    </div>
+  </div>
+
+  <div class="email__block">
+    <label for="subject" class="email__label">subject:</label>
+    <div class="email__inputBox">
+      <input type="text" name="subject" class="email__input" placeholder="Enter email subject">
+    </div>
+  </div>
+
+  <div class="email__block">
+    <label for="message" class="email__label">message:</label>
+    <div class="email__inputBox">
+      <textarea name="message" cols="30" rows="10" class="email__input email__input-textArea" placeholder="Enter your message"></textarea>
+    </div>
+  </div>
+</form>
+
+<app-button-generate-qr></app-button-generate-qr>

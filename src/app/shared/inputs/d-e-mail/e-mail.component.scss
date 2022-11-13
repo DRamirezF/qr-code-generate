@@ -1,0 +1,42 @@
+@import "./../../../../styles.scss";
+
+.email {
+  background-color: chocolate;
+  margin: 0 0 2em;
+
+  &__block {
+    @include flex(row, wrap, space-between, center);
+    gap: .3em;
+    margin: 0 0 1em;
+  }
+  &__label {
+    width: 100%;
+    text-transform: capitalize;
+
+    @include media($tabletS) {
+      width: auto;
+      line-height: 48px;
+    }
+  }
+  &__input {
+    background-color: lavender;
+    height: 48px;
+    padding: .5em .8em;
+    font-weight: 600;
+
+    border: 2px solid $border;
+    border-radius: .2em;
+
+    &::placeholder {
+      font-weight: 400;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__input-textArea {
+    height: 90px;
+  }
+}

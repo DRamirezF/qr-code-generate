@@ -12,9 +12,10 @@
 }
 
 $mobile:  23.5em;   // 376px
-$tabletS: 36em;     // 576px
-$tablet:  48.063em; // 769px
-$desktop: 90.063em; // 1441px
+$tabletS:   36em;     // 576px
+$tablet:    48.063em; // 769px
+$portatil:  62em;     // 992px
+$desktop:   90.063em; // 1441px
 
 
 @mixin media ( $media ) {
@@ -26,37 +27,18 @@ $desktop: 90.063em; // 1441px
 // Varibles
   // Colors
     // Text
-      $grayB: #616568;
+      $grayB:             #616568;
+      $gray-description:  #797d80;
+      $black:             #000000;
     // background
-      $white: #ffffff;
+      $white:             #ffffff;
+      $green:             #90c52d;
+      $blue:              #47bdef;
     // Border
-      $border: #EAEAEA;
+      $border:            #EAEAEA;
 
   // Font Size
     $small: 12px;
-
-
-
-
-// $black: hsl(230, 35%, 7%);
-// $white: hsl(0, 0%, 100%);
-
-// $heading-1: 9.375em;    // Bellefair
-// $heading-2: 6.25em;    // Bellefair
-// $heading-3: 3.5em;     // Bellefair
-// $heading-4: 2em;     // Bellefair
-
-// $heading-5: 1.75em;     // Barlow Condensed
-// $characterSpace-1: 2.97em;
-
-// $subHeading-1: 1.75em;  // Bellefair
-
-// $subHeading-2: 8.75em;  // Barlow Condensed
-// $characterSpace-2: 0.147em;
-
-// $nav-Text: 1em;      // Barlow Condensed
-// $characterSpace-3: 1.69em;
-
 
 
 /*
@@ -197,3 +179,6 @@ body {
   /* opcional */ -webkit-font-smoothing: antialiased;
   /* opcional */ -moz-osx-font-smoothing: grayscale;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

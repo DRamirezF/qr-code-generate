@@ -1,0 +1,19 @@
+<app-subtitle [subtitle]="'SMS QR Code'"></app-subtitle>
+
+<form class="sms" action="">
+  <div class="sms__block">
+    <label for="number" class="sms__label">number:</label>
+    <div class="sms__inputBox">
+      <input type="number" id="number" class="sms__input" placeholder="Your number">
+    </div>
+  </div>
+
+  <div class="sms__block">
+    <label for="message" class="sms__label">message:</label>
+    <div class="sms__inputBox">
+      <textarea name="message" cols="30" rows="10" class="sms__input sms__input-textArea" placeholder="Enter your message"></textarea>
+    </div>
+  </div>
+</form>
+
+<app-button-generate-qr></app-button-generate-qr>

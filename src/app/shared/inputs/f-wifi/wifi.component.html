@@ -1,0 +1,21 @@
+<app-subtitle [subtitle]="'Wifi QR Code'"></app-subtitle>
+
+<form class="wifi" action="">
+  <div class="wifi__block">
+    <label for="wifi" class="wifi__label">Network name:</label>
+    <div class="wifi__inputBox">
+      <input type="text" id="wifi" class="wifi__input" placeholder="SSID">
+      <input type="checkbox" class="wifi__checkbox" placeholder="Hidden">
+    </div>
+  </div>
+
+  <div class="wifi__block">
+    <label for="password" class="wifi__label">password:</label>
+    <div class="wifi__inputBox">
+      <input type="password" id="password" class="wifi__input" placeholder="Your password">
+    </div>
+  </div>
+
+</form>
+
+<app-button-generate-qr></app-button-generate-qr>

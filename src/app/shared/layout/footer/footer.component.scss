@@ -2,56 +2,10 @@
 
 .footer {
   background-color: darkmagenta;
-  // height: 100px;
-  @include flex(column, nowrap, space-between, center);
-
-  @include media($tablet){
-    @include flex(row, nowrap, space-between, flex-end);
-  }
-
-  .scan {
-    @include flex(row, nowrap, center, center);
-    gap: .5em;
-    background-color: orange;
-    margin: 2em 0 0;
-
-    @include media($tablet){
-      order: 1;
-    }
-
-    &__icon {
-      width: 60px;
-      height: 32px;
-      background-color: crimson;
-    }
-    &__text {
-      background-color: darkcyan;
-    }
-  }
-
-}
-
-.upload {
-  background-color: teal;
   @include flex(row, nowrap, center, center);
-  gap: .3em;
-  margin: 5.625em 0 0;
 
   @include media($tablet){
-    order: 0;
-  }
-
-  &__icon {
-    width: 16px;
-    height: 16px;
-    background-color: crimson;
-  }
-  &__textBlue {}
-  &__textGray {
-    display: none;
-
-    @include media($tabletS) {
-      display: block;
-    }
+    @include flex(row, nowrap, flex-start, center);
   }
 }
+

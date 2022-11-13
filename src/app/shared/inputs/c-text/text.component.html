@@ -1,0 +1,10 @@
+<mat-form-field class="text" appearance="fill">
+  <!-- <mat-label>Clearable input</mat-label> -->
+  <!-- <input class="text__input" matInput type="text" [(ngModel)]="value"> -->
+  <textarea class="text__textArea" matInput autofocus placeholder="Enter your text" [(ngModel)]="value"></textarea>
+  <button class="text__button" *ngIf="value" matSuffix mat-icon-button (click)="value=''">
+    <mat-icon class="text__icon">close</mat-icon>
+  </button>
+</mat-form-field>
+
+<app-button-generate-qr class="button"></app-button-generate-qr>
