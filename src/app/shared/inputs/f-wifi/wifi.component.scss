@@ -10,19 +10,28 @@
     margin: 0 0 1em;
   }
   &__label {
-    width: 100%;
     text-transform: capitalize;
 
     @include media($tabletS) {
       width: auto;
-      line-height: 48px;
+      line-height: 22.5px;
     }
   }
   &__inputBox {
     width: 100%;
+    @include flex(column, wrap, flex-start, center);
+    gap: 1em;
+
+    @include media($tabletS){
+      width: 75%;
+    }
+
+    @include media($tablet){
+      @include flex(row, nowrap, flex-start, center);
+    }
   }
   &__input {
-    // width: 100%;
+    width: 100%;
     background-color: lavender;
     height: 48px;
     padding: .5em .8em;
@@ -39,9 +48,46 @@
       outline: none;
     }
   }
+  &__checkboxWrapper {
+    @include flex(row, nowrap, flex-start, center);
+    gap: .3em;
+  }
   &__checkbox {
     width: 18px;
     height: 18px;
-    border-color: black;
+    border-radius: 50%;
+    background-color: black;
   }
+  &__toolTip {
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+  }
+  &__encryption {
+    @include flex(row, nowrap, flex-start, center);
+    gap: .3em;
+    width: 100%;
+  }
+  &__encryptWrapper {
+    @include flex(row, wrap, flex-start, center);
+    gap: .5em;
+
+    @include media($mobileS){
+      @include flex(row, nowrap, flex-start, center);
+    }
+  }
+  &__radioBox {
+    @include flex(row, nowrap, flex-start, center);
+    gap: .5em;
+    margin: 0 1em 0 0;
+  }
+  &__radio {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  // &__radioText {}
 }
+

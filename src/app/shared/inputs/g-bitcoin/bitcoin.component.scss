@@ -1,0 +1,68 @@
+@import "./../../../../styles.scss";
+
+.mat-radio-label-content {
+  padding-left: 0;
+}
+
+.bitcoin {
+  background-color: chocolate;
+  margin: 0 0 2em;
+  font-size: 15px;
+
+  &__block {
+    @include flex(row, wrap, space-between, center);
+    gap: .3em;
+    margin: 0 0 1em;
+  }
+  &__label {
+    width: 100%;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    @include media($tabletS) {
+      width: auto;
+      line-height: 48px;
+    }
+  }
+  &__radioBox {
+    width: 100%;
+
+    @include flex(row, wrap, flex-start, center);
+    gap: .5em 1em;
+
+    @include media($tabletS){
+      width: 70%;
+    }
+  }
+  &__radio {
+    font-weight: 600;
+  }
+  &__inputBox {
+    width: 100%;
+
+    @include flex(row, wrap, flex-start, center);
+    gap: .5em 1em;
+
+    @include media($tabletS){
+      width: 80%;
+    }
+  }
+  &__input {
+    width: 100%;
+    background-color: lavender;
+    height: 48px;
+    padding: 0 .8em;
+    font-weight: 600;
+
+    border: 2px solid $border;
+    border-radius: .2em;
+
+    &::placeholder {
+      font-weight: 400;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

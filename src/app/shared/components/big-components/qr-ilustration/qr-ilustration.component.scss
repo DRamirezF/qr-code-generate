@@ -1,0 +1,72 @@
+@import "./../../../styles.scss";
+
+.ilustration {
+  min-height: 540px;
+  display: none;
+  max-width: 400px;
+  padding: 2em;
+  position: relative;
+  text-transform: uppercase;
+  background-color: #fff;
+
+  @include media($portatil){
+    display: block;
+  }
+
+  &__wrapper {
+    @include flex(column, nowrap, center, stretch );
+    gap: 1em;
+  }
+  // &__preview {}
+  &__img {
+    height: 174px;
+    width: 174px;
+    margin: auto;
+  }
+
+  // &__customizer {}
+
+  &__download {
+    @include flex(row, nowrap, center, center);
+    gap: 1em;
+  }
+  &__button {
+    @include flex(row, nowrap, center, center);
+    gap: .3em;
+    width: 100%;
+    padding: .8em 1.3em;
+    border-radius: 100px;
+
+    &-green {
+      background-color: #90c52d;
+      color: #fff;
+    }
+
+    &-transparent {
+      border: 2px solid #90c52d;
+      color: #90c52d;
+    }
+  }
+  &__icon {
+    width: 18px;
+    height: 31px;
+  }
+  &__textBox {
+    @include flex(column, nowrap, center, center);
+    text-transform: uppercase;
+  }
+  &__top {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+  &__botton {
+    line-height: 14px;
+    font-size: 12px;
+    opacity: .7;
+  }
+}
+
+.active {
+  background-color: gray;
+}

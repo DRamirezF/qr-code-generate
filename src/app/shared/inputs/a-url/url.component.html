@@ -1,11 +1,12 @@
-<mat-form-field class="url" appearance="fill">
+<textarea class="url__textArea" autofocus placeholder="Enter your webside, text or drop file here" [(ngModel)]="value"></textarea>
+<!-- <mat-form-field class="url" appearance="fill"> -->
   <!-- <mat-label>Clearable input</mat-label> -->
   <!-- <input class="url__input" matInput type="text" [(ngModel)]="value"> -->
-  <textarea class="url__textArea" matInput autofocus placeholder="Enter your webside or text" [(ngModel)]="value"></textarea>
-  <button class="url__button" *ngIf="value" matSuffix mat-icon-button (click)="value=''">
-    <mat-icon class="url__icon">close</mat-icon>
-  </button>
-</mat-form-field>
+  <!-- <button class="url__button" *ngIf="value" matSuffix mat-icon-button (click)="value=''"> -->
+    <!-- <mat-icon class="url__icon">close</mat-icon> -->
+  <!-- </button> -->
+<!-- </mat-form-field> -->
 
+<app-description *ngIf="!value" [description]="'Your QR Code will be generated automatically'"></app-description>
 <app-button-generate-qr class="button"></app-button-generate-qr>
 

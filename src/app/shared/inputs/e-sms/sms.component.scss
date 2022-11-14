@@ -20,6 +20,10 @@
   }
   &__inputBox {
     width: 100%;
+
+    @include media($tabletS){
+      width: 90%;
+    }
   }
   &__input {
     width: 100%;

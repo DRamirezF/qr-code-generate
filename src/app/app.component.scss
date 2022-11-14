@@ -1,3 +1,16 @@
+@import "./../styles.scss";
+
 .app {
+  min-height: 100vh;
   background-color:chocolate;
+  @include flex(row, nowrap, center, center);
+  gap: 1em;
+
+  @include media($tabletS){
+    width: 80%;
+    margin: auto;
+  }
+  @include media($tablet){
+    width: 90%;
+  }
 }

@@ -23,7 +23,10 @@
 
   &__icon {
     width: 14px;
-    height: 14px;
-    background-color: crimson;
+  }
+
+  &__text {
+    font-weight: 900;
+    text-transform: uppercase;
   }
 }

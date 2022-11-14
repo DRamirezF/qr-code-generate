@@ -1,3 +1,4 @@
+
 // Mixins
 @mixin flex ( $dir , $wrap , $just , $align) {
   display: flex;
@@ -11,7 +12,8 @@
   }
 }
 
-$mobile:  23.5em;   // 376px
+$mobileS:   20.938em; // 335px
+$mobile:    23.5em;   // 376px
 $tabletS:   36em;     // 576px
 $tablet:    48.063em; // 769px
 $portatil:  62em;     // 992px
@@ -40,7 +42,9 @@ $desktop:   90.063em; // 1441px
   // Font Size
     $small: 12px;
 
-
+  .mat-typography{
+    font-family: var(--tipo-principal);
+  }
 /*
 
   Con este reset vamos a resolver:
@@ -141,7 +145,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form , input, textarea, select , button , label{
-    font-family: inherit;
+    font-family: var(--tipo-principal);
     font-size: inherit;
     hyphens: auto;
     background-color: transparent;
@@ -179,6 +183,3 @@ body {
   /* opcional */ -webkit-font-smoothing: antialiased;
   /* opcional */ -moz-osx-font-smoothing: grayscale;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

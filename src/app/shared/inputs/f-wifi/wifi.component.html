@@ -5,15 +5,40 @@
     <label for="wifi" class="wifi__label">Network name:</label>
     <div class="wifi__inputBox">
       <input type="text" id="wifi" class="wifi__input" placeholder="SSID">
-      <input type="checkbox" class="wifi__checkbox" placeholder="Hidden">
+      <div class="wifi__checkboxWrapper">
+        <input type="checkbox" class="wifi__checkbox" placeholder="Hidden">
+        <div class="wifi__span">Hidden</div>
+        <a href="" class="wifi__toolTip"></a>
+      </div>
     </div>
   </div>
 
   <div class="wifi__block">
     <label for="password" class="wifi__label">password:</label>
     <div class="wifi__inputBox">
-      <input type="password" id="password" class="wifi__input" placeholder="Your password">
+      <input type="password" id="password" class="wifi__input">
     </div>
+  </div>
+
+  <div class="wifi__block">
+    <div class="wifi__encryption">
+      <label for="encryption" class="wifi__label">encryption:</label>
+      <a href="" class="wifi__toolTip"></a>
+    </div>
+    <div class="wifi__encryptWrapper">
+      <div class="wifi__radioBox">
+        <input type="radio" class="wifi__radio">
+        <label for="none" id="none" class="wifi__radioText">None</label>
+      </div>
+      <div class="wifi__radioBox">
+        <input type="radio" class="wifi__radio">
+        <label for="wpa" id="wpa" class="wifi__radioText">WPA/WPA2</label>
+      </div>
+      <div class="wifi__radioBox">
+        <input type="radio" class="wifi__radio">
+        <label for="wep" id="wep" class="wifi__radioText">WEP</label>
+    </div>
+  </div>
   </div>
 
 </form>

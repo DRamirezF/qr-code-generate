@@ -1,1 +1,44 @@
-<p>bitcoin works!</p>
+<app-subtitle [subtitle]="'Bitcoin QR Code'"></app-subtitle>
+<div class="bitcoin">
+  <div class="bitcoin__block">
+    <label class="example-margin bitcoin__label">Cryptocurrency</label>
+    <mat-radio-group class="bitcoin__radioBox">
+      <mat-radio-button class="example-margin bitcoin__radio">
+        Bitcoin
+      </mat-radio-button>
+      <mat-radio-button class="example-margin bitcoin__radio bitcoin__radio-mod">
+        Bitcoin Cash
+      </mat-radio-button>
+      <mat-radio-button class="example-margin bitcoin__radio">
+        Ether
+      </mat-radio-button>
+      <mat-radio-button class="example-margin bitcoin__radio">
+        Litecoin
+      </mat-radio-button>
+      <mat-radio-button class="example-margin bitcoin__radio">
+        Dash
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <div class="bitcoin__block">
+    <label for="amount" class="bitcoin__label">Amount</label>
+    <div class="bitcoin__inputBox">
+      <input type="text" id="amount" class="bitcoin__input">
+    </div>
+  </div>
+
+  <div class="bitcoin__block">
+    <label for="amount" class="bitcoin__label">Receiver</label>
+    <div class="bitcoin__inputBox">
+      <input type="text" id="amount" class="bitcoin__input">
+    </div>
+  </div>
+
+  <div class="bitcoin__block">
+    <label for="amount" class="bitcoin__label">Message</label>
+    <div class="bitcoin__inputBox">
+      <input type="text" id="amount" class="bitcoin__input" placeholder="Optional">
+    </div>
+  </div>
+</div>

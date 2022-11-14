@@ -2,18 +2,23 @@
 
 .upload {
   width: 100%;
-  background-color: teal;
   @include flex(row, nowrap, center, center);
   gap: .3em;
   margin: 5.625em 0 0;
 
+  font-size: 16px;
+
   &__icon {
     width: 16px;
-    height: 16px;
-    background-color: crimson;
   }
-  // &__textBlue {}
+  &__textBlue {
+    color: #47bdfe;
+    font-weight: 700;
+  }
+
   &__textGray {
+    font-weight: 600;
+    color: #a4a5a8;
     display: none;
 
     @include media($tabletS) {

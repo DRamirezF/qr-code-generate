@@ -3,21 +3,13 @@
 .scan {
   @include flex(row, nowrap, center, center);
   gap: .5em;
-  background-color: orange;
-  margin: 2em 0 0;
+  width: 135px;
+  margin: 2em auto 0;
 
   @include media($tablet){
     position: absolute;
     bottom: 2em;
     right: 3.625em;
-  }
-
-  &__icon {
-    width: 60px;
-    height: 32px;
-    background-color: crimson;
-  }
-  &__text {
-    background-color: darkcyan;
+    width: auto;
   }
 }

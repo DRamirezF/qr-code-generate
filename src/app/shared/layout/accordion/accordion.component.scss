@@ -1,0 +1,17 @@
+@import "./../../../../styles.scss";
+
+.card {
+  background-color: ghostwhite;
+  @include flex(row, wrap, flex-start, center);
+  gap: .5em;
+}
+
+.a {
+  width: 46px;
+  height: 46px;
+  background-color: crimson;
+}
+
+.mat-expansion-panel-spacing {
+  margin: .4em 0 0;
+}

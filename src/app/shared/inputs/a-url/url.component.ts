@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./url.component.scss']
 })
 export class UrlComponent implements OnInit {
-  value:string = 'a';
+  value!:string;
 
   constructor() { }
 

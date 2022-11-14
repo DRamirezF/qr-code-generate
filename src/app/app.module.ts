@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './shared/layout/header/header.component';
-import { QrGeneretorComponent } from './pages/qr-generetor/qr-generetor.component';
-import { FooterComponent } from './shared/layout/footer/footer.component';
+import { QrGeneretorComponent } from './shared/components/big-components/qr-generetor/qr-generetor.component';
 import { UrlComponent } from './shared/inputs/a-url/url.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
@@ -22,19 +21,21 @@ import { PdfComponent } from './shared/inputs/j-pdf/pdf.component';
 import { Mp3Component } from './shared/inputs/k-mp3/mp3.component';
 import { AppStoresComponent } from './shared/inputs/l-app-stores/app-stores.component';
 import { ImagesComponent } from './shared/inputs/m-images/images.component';
-import { ButtonGenerateQrComponent } from './shared/components/microComponents/button-generate-qr/button-generate-qr.component';
-import { ButtonSingUpComponent } from './shared/components/microComponents/button-sing-up/button-sing-up.component';
-import { SubtitleComponent } from './shared/components/microComponents/subtitle/subtitle.component';
-import { DescriptionComponent } from './shared/components/microComponents/description/description.component';
-import { ScanTrackingComponent } from './shared/components/microComponents/scan-tracking/scan-tracking.component';
-import { UploadFileComponent } from './shared/components/microComponents/upload-file/upload-file.component';
+import { ButtonGenerateQrComponent } from './shared/components/micro-components/button-generate-qr/button-generate-qr.component';
+import { ButtonSingUpComponent } from './shared/components/micro-components/button-sing-up/button-sing-up.component';
+import { SubtitleComponent } from './shared/components/micro-components/subtitle/subtitle.component';
+import { DescriptionComponent } from './shared/components/micro-components/description/description.component';
+import { ScanTrackingComponent } from './shared/components/micro-components/scan-tracking/scan-tracking.component';
+import { UploadFileComponent } from './shared/components/micro-components/upload-file/upload-file.component';
+import { QrIlustrationComponent } from './shared/components/big-components/qr-ilustration/qr-ilustration.component';
+import { AccordionComponent } from './shared/layout/accordion/accordion.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     QrGeneretorComponent,
-    FooterComponent,
     UrlComponent,
     VcardsComponent,
     TextComponent,
@@ -53,7 +54,10 @@ import { UploadFileComponent } from './shared/components/microComponents/upload-
     SubtitleComponent,
     DescriptionComponent,
     ScanTrackingComponent,
-    UploadFileComponent
+    UploadFileComponent,
+    QrIlustrationComponent,
+    AccordionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

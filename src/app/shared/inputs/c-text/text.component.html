@@ -1,10 +1,11 @@
-<mat-form-field class="text" appearance="fill">
+<textarea class="text__textArea" matInput autofocus placeholder="Enter your text" [(ngModel)]="value"></textarea>
+<!-- <mat-form-field class="text" appearance="fill"> -->
   <!-- <mat-label>Clearable input</mat-label> -->
   <!-- <input class="text__input" matInput type="text" [(ngModel)]="value"> -->
-  <textarea class="text__textArea" matInput autofocus placeholder="Enter your text" [(ngModel)]="value"></textarea>
-  <button class="text__button" *ngIf="value" matSuffix mat-icon-button (click)="value=''">
-    <mat-icon class="text__icon">close</mat-icon>
-  </button>
-</mat-form-field>
+  <!-- <button class="text__button" *ngIf="value" matSuffix mat-icon-button (click)="value=''"> -->
+    <!-- <mat-icon class="text__icon">close</mat-icon> -->
+  <!-- </button> -->
+<!-- </mat-form-field> -->
 
+<app-description *ngIf="!value" [description]="'Your QR Code will be generated automatically'"></app-description>
 <app-button-generate-qr class="button"></app-button-generate-qr>

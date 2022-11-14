@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./qr-generetor.component.scss']
 })
 export class QrGeneretorComponent implements OnInit {
+  show:string = 'url';
+
+  changeItem(newItem: string) {
+    this.show = newItem;
+  }
 
   constructor() { }
 

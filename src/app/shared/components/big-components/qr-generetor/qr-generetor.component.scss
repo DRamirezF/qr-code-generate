@@ -1,20 +1,21 @@
 @import "./../../../styles.scss";
 
-.qr {
-  min-height: 100vh;
+.generator {
+  min-height: 540px;
   padding: 2em 2.5em;
-  background-color:cornflowerblue;
   position: relative;
+
+  background-color: #fff;
 
   @include flex(column, nowrap, space-between, center);
 
   @include media($tabletS){
-    width: 95%;
-    margin: auto;
     max-width: 800px;
   }
 
-  // &__header {}
+  &__body {
+    margin: 4em 0 0;
+  }
   &__footer {
     width: 100%;
 
@@ -22,7 +23,4 @@
       @include flex(row, nowrap, flex-start, center);
     }
   }
-}
-.div {
-  margin: 4em 0 0;
 }
