@@ -1,1 +1,32 @@
-<p>twitter works!</p>
+<app-subtitle [subtitle]="'Twitter'"></app-subtitle>
+
+<div class="twitter">
+  <div class="twitter__block">
+    <label class="example-margin twitter__label">Choose an option</label>
+    <mat-radio-group class="twitter__radioBox">
+      <mat-radio-button class="example-margin twitter__radio" (click)="selection = 'Link to your profile'" value="Link to your profile">
+        Link to your profile
+      </mat-radio-button>
+      <mat-radio-button class="example-margin twitter__radio" (click)="selection = 'Post a tweet'" value="Post a tweet">
+        Post a tweet
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <div class="twitter__block" *ngIf="selection === 'Link to your profile'">
+    <label for="username" class="twitter__label">Your username</label>
+    <div class="twitter__inputBox">
+      <input type="text" id="username" class="twitter__input" placeholder="@username">
+    </div>
+  </div>
+
+  <div class="twitter__block" *ngIf="selection === 'Post a tweet'">
+    <label for="text" class="twitter__label">Text</label>
+    <div class="twitter__inputBox">
+      <textarea class="twitter__input twitter__input-textArea" placeholder="Compose your tweet"></textarea>
+      <span class="twitter__amount">{{amount}} /280 characters</span>
+    </div>
+  </div>
+</div>
+
+<app-button-generate-qr></app-button-generate-qr>

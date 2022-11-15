@@ -17,6 +17,8 @@
 
   border-radius: 2em;
 
+  cursor: pointer;
+
   @include media($tablet){
     margin: 2.5em 0 0;
   }

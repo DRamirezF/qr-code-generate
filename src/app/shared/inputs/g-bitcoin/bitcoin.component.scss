@@ -4,10 +4,14 @@
   padding-left: 0;
 }
 
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #47bdfe;
+}
+
 .bitcoin {
-  background-color: chocolate;
   margin: 0 0 2em;
   font-size: 15px;
+  color: #797d80;
 
   &__block {
     @include flex(row, wrap, space-between, center);
@@ -49,7 +53,6 @@
   }
   &__input {
     width: 100%;
-    background-color: lavender;
     height: 48px;
     padding: 0 .8em;
     font-weight: 600;

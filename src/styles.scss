@@ -1,4 +1,6 @@
-
+.mat-typography{
+  font-family: var(--tipo-principal);
+}
 // Mixins
 @mixin flex ( $dir , $wrap , $just , $align) {
   display: flex;
@@ -42,9 +44,6 @@ $desktop:   90.063em; // 1441px
   // Font Size
     $small: 12px;
 
-  .mat-typography{
-    font-family: var(--tipo-principal);
-  }
 /*
 
   Con este reset vamos a resolver:

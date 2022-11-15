@@ -1,0 +1,14 @@
+@import "./../../../styles.scss";
+
+.home {
+  @include flex(row, nowrap, center, flex-start);
+  gap: 1em;
+
+  @include media($tabletS){
+    width: 90%;
+    margin: auto;
+  }
+  @include media($tablet){
+    width: 85%;
+  }
+}

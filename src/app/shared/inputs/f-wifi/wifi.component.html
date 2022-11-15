@@ -5,10 +5,12 @@
     <label for="wifi" class="wifi__label">Network name:</label>
     <div class="wifi__inputBox">
       <input type="text" id="wifi" class="wifi__input" placeholder="SSID">
-      <div class="wifi__checkboxWrapper">
-        <input type="checkbox" class="wifi__checkbox" placeholder="Hidden">
-        <div class="wifi__span">Hidden</div>
-        <a href="" class="wifi__toolTip"></a>
+      <div class="wifi__hiden">
+        <mat-checkbox class="example-margin wifi__checkbox">Hidden</mat-checkbox>
+        <span
+        class="wifi__toolTip wifi__toolTip-hiden"
+        matTooltip="Is this a hidden WiFi network?"
+        [matTooltipPosition]="position">?</span>
       </div>
     </div>
   </div>
@@ -23,22 +25,23 @@
   <div class="wifi__block">
     <div class="wifi__encryption">
       <label for="encryption" class="wifi__label">encryption:</label>
-      <a href="" class="wifi__toolTip"></a>
+      <span
+        class="wifi__toolTip"
+        matTooltip="The type of security protocol on your network"
+        [matTooltipPosition]="position">?</span>
     </div>
-    <div class="wifi__encryptWrapper">
-      <div class="wifi__radioBox">
-        <input type="radio" class="wifi__radio">
-        <label for="none" id="none" class="wifi__radioText">None</label>
-      </div>
-      <div class="wifi__radioBox">
-        <input type="radio" class="wifi__radio">
-        <label for="wpa" id="wpa" class="wifi__radioText">WPA/WPA2</label>
-      </div>
-      <div class="wifi__radioBox">
-        <input type="radio" class="wifi__radio">
-        <label for="wep" id="wep" class="wifi__radioText">WEP</label>
-    </div>
-  </div>
+
+    <mat-radio-group class="wifi__radioBox">
+      <mat-radio-button class="example-margin wifi__radio" value="None">
+        None
+      </mat-radio-button>
+      <mat-radio-button class="example-margin wifi__radio" value="WPA/WPA2">
+        WPA/WPA2
+      </mat-radio-button>
+      <mat-radio-button class="example-margin wifi__radio" value="WEP">
+        WEP
+      </mat-radio-button>
+    </mat-radio-group>
   </div>
 
 </form>

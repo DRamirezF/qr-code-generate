@@ -1,7 +1,6 @@
 @import "./../../../../styles.scss";
 
 .vcard {
-  background-color: chocolate;
   margin: 0 0 2em;
 
   &__block {
@@ -20,7 +19,6 @@
   }
   &__input {
     width: 100%;
-    background-color: lavender;
     height: 48px;
     padding: 0 .8em;
     font-weight: 600;

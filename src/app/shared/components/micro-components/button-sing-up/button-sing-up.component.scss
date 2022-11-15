@@ -4,6 +4,7 @@
   @include flex(row, nowrap, center, center);
   gap: .5em;
   max-width: 280px;
+  height: 45px;
   background-color: $blue;
   color: $white;
 
@@ -11,11 +12,17 @@
   padding: 0 1em;
 
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 
   border-radius: .2em;
+
+  cursor: pointer;
+
+  -webkit-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.3);
+  // -webkit-box-shadow: 0 6px 9px 0 rgb(60 66 69 / 10%), 0 2px 6px 0 rgb(60 66 69 / 25%), 0 8px 16px 0 rgb(86 86 86 / 10%), -4px 6.93px 16px 0 rgb(86 86 86 / 10%);
 
   @include media($tablet){
     margin: 2.5em 0 0;
@@ -23,7 +30,5 @@
 
   &__icon {
     width: 19px;
-    height: 45px;
-    background-color: crimson;
   }
 }

@@ -1,7 +1,6 @@
 @import "./../../../../styles.scss";
 
 .email {
-  background-color: chocolate;
   margin: 0 0 2em;
 
   &__block {
@@ -27,7 +26,6 @@
   }
   &__input {
     width: 100%;
-    background-color: lavender;
     height: 48px;
     padding: .5em .8em;
     font-weight: 600;
@@ -46,5 +44,6 @@
 
   &__input-textArea {
     height: 90px;
+    resize: none;
   }
 }

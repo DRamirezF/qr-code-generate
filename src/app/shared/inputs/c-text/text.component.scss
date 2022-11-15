@@ -2,7 +2,6 @@
 
 .text {
   width: 100%;
-  background-color: chocolate;
 
   &__textArea {
     width: 100%;
@@ -10,10 +9,14 @@
     color: $black;
     font-weight: 700;
     font-size: 26px;
-    line-height: 39px;
+    line-height: 1.4em;
+    margin: 0 0 .2em;
+    resize: none;
+
+    &:focus-visible {
+      outline: none;
+    }
   }
-  // &__button {}
-  // &__icon {}
 }
 
 .button {

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bitcoin.component.scss']
 })
 export class BitcoinComponent implements OnInit {
-
+  coin:string = 'Bitcoin';
   constructor() { }
 
   ngOnInit(): void {

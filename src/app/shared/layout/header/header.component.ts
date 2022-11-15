@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TooltipPosition } from '@angular/material/tooltip';
 
 @Component({
@@ -13,10 +13,8 @@ export class HeaderComponent {
 
   constructor() { }
 
-
   send(value: string) {
     this.show = value;
-    console.log(this.show)
     this.sendItemName.emit(value);
   }
 

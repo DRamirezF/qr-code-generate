@@ -3,19 +3,19 @@
   <div class="bitcoin__block">
     <label class="example-margin bitcoin__label">Cryptocurrency</label>
     <mat-radio-group class="bitcoin__radioBox">
-      <mat-radio-button class="example-margin bitcoin__radio">
+      <mat-radio-button class="example-margin bitcoin__radio" (click)="coin = 'Bitcoin'" value="Bitcoin">
         Bitcoin
       </mat-radio-button>
-      <mat-radio-button class="example-margin bitcoin__radio bitcoin__radio-mod">
+      <mat-radio-button class="example-margin bitcoin__radio" (click)="coin = 'Bitcoin Cash'" value="Bitcoin Cash">
         Bitcoin Cash
       </mat-radio-button>
-      <mat-radio-button class="example-margin bitcoin__radio">
+      <mat-radio-button class="example-margin bitcoin__radio" (click)="coin = 'Ether'" value="Ether">
         Ether
       </mat-radio-button>
-      <mat-radio-button class="example-margin bitcoin__radio">
+      <mat-radio-button class="example-margin bitcoin__radio" (click)="coin = 'Litecoin'" value="Litecoin">
         Litecoin
       </mat-radio-button>
-      <mat-radio-button class="example-margin bitcoin__radio">
+      <mat-radio-button class="example-margin bitcoin__radio" (click)="coin = 'Dash'" value="Dash">
         Dash
       </mat-radio-button>
     </mat-radio-group>
@@ -31,7 +31,7 @@
   <div class="bitcoin__block">
     <label for="amount" class="bitcoin__label">Receiver</label>
     <div class="bitcoin__inputBox">
-      <input type="text" id="amount" class="bitcoin__input">
+      <input type="text" id="amount" class="bitcoin__input" placeholder="{{coin}} Address">
     </div>
   </div>
 
@@ -42,3 +42,5 @@
     </div>
   </div>
 </div>
+
+<app-button-generate-qr></app-button-generate-qr>

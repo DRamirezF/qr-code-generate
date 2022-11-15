@@ -1,17 +1,112 @@
 @import "./../../../../styles.scss";
 
-.card {
-  background-color: ghostwhite;
-  @include flex(row, wrap, flex-start, center);
-  gap: .5em;
+.accordion {
+
+  &__block {
+    background-color: #f7f7f7;
+  }
+  &__title {
+    color: #a4a6a7;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  &__header {
+    &-blue {
+      background-color: #00BFFF;
+
+      .accordion__title {
+        color: #fff;
+      }
+    }
+  }
+  &__subtitle {
+    margin: 0 0 0 1em;
+    padding: 0 .5em;
+    line-height: 17px;
+    background-color: #1974d2;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: .5em;
+  }
+  &__card {
+    @include flex(row, wrap, flex-start, center);
+    gap: .5em;
+    padding: .4em 0 0;
+  }
+  &__miniCard {
+    width: 46px;
+    height: 46px;
+    border: 2px solid #d4d4d4;
+    // background-color: crimson;
+    cursor: pointer;
+    &-green {
+      border-color: #90c52d;
+    }
+    &-blue {
+      border-color: #00BFFF;
+    }
+    &-rounded {
+      width: 32px;
+      height: 32px;
+      background-color: black;
+      border-radius: 50%;
+      align-self: center;
+      position: relative;
+    }
+  }
+
+  &__plus {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    margin: 6px;
+
+  }
+  &__icon {
+    width: 50%;
+    fill: #00BFFF;
+    margin: 3.5px auto;
+  }
+  &__iconX {
+    width: 24px;
+    height: 24px;
+    fill: #a4a6a7;
+    margin: .6em auto 0;
+  }
+
+  &__link {
+    margin: 1em 0 0;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #47bdef;
+  }
+
 }
 
-.a {
-  width: 46px;
-  height: 46px;
-  background-color: crimson;
+.mat-expansion-indicator::after {
+  background-color: #fff;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+.mat-expansion-panel:not(.mat-expanded), .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+  background-color: rgba($color: $green, $alpha: 0);
 }
 
 .mat-expansion-panel-spacing {
   margin: .4em 0 0;
+}
+
+.mat-expansion-panel-header {
+  height: 2em;
+}
+
+.mat-expansion-panel-header {
+  font-family: var(--tipo-principal);
 }
