@@ -9,7 +9,7 @@ import { UrlComponent } from './shared/inputs/a-url/url.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
-import { VcardsComponent } from './shared/inputs/b-vcards/vcards.component';
+import { VcardComponent } from './shared/inputs/b-vcard/vcard.component';
 import { TextComponent } from './shared/inputs/c-text/text.component';
 import { EMailComponent } from './shared/inputs/d-e-mail/e-mail.component';
 import { SmsComponent } from './shared/inputs/e-sms/sms.component';
@@ -37,7 +37,7 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     QrGeneretorComponent,
     UrlComponent,
-    VcardsComponent,
+    VcardComponent,
     TextComponent,
     EMailComponent,
     SmsComponent,
